@@ -7,7 +7,7 @@ Build a tool that assesses the strength of a password based on criteria such as 
 ### NOTE: Deployment
 The following python tool has been deployed using Streamlit
 
-Streamlit Link: 
+Streamlit Link: https://passwordcomplexitychecker.streamlit.app/
 
 ## Implementation
 The following program uses re library to read regular expressions in password.
