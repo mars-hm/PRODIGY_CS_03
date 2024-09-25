@@ -8,27 +8,27 @@ def passwordchecker(password):
     if len(password) >= 8:
         strength += 1
     else:
-        missing_criteria.append("\t\nIncrease password length\n")
+        missing_criteria.append("\tIncrease password length\n")
     
     if re.search(r'[A-Z]', password):
         strength += 1
     else:
-        missing_criteria.append("\t\nUppercase letters\n")
+        missing_criteria.append("\tUppercase letters\n")
 
     if re.search(r'[a-z]', password):
         strength += 1
     else:
-        missing_criteria.append("\t\nLowercase letters\n")
+        missing_criteria.append("\tLowercase letters\n")
 
     if re.search(r'[0-9]', password):
         strength += 1
     else:
-        missing_criteria.append("\t\nDigits\n")
+        missing_criteria.append("\tDigits\n")
 
     if re.search(r'[!@#$%^&*(),.?":{}|<>]', password):
         strength += 1
     else:
-        missing_criteria.append("\t\nSpecial characters")
+        missing_criteria.append("\tSpecial characters")
 
     return strength, missing_criteria
 
